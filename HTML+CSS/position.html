@@ -5,39 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .sq {
-            height: 200px;
-            width: 200px;
-        }
-        .mini {
-            height: 50px;
-            width: 50px;
-            position: relative;
-        }
 
-        .red {
-            background-color: red;
-            position: relative;
-        }
-        .blue {
-            background-color: blue;
-            position: relative;
+.spain-color {
+    height: 50px;
+    width: 120px;
+}
 
-        }
-        .pink {
-            background-color: pink;
-            position: relative;
+.france-color {
+    height: 150px;
+    width: 40px;
+}
 
-        }
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.blue {
+    background-color: cadetblue;
+}
+.white {
+    background-color: cornsilk;
+}
+
+.france {
+    margin-top: 20px;
+    position: relative;
+}
+
+.end {
+    position: relative;
+    left: 80px;
+    top: -300px;
+}
+
+.middle {
+    position: relative;
+    top: -150px;
+    left: 40px;
+}
+
     </style>
 </head>
 <body>
 
-    <div class="sq red">
-        <div class="mini blue"></div>
-    </div>
-    <div class="sq blue"></div>
-    <div class="sq pink"></div>
+<div class="spain">
+    <div class="spain-color red"></div>
+    <div class="spain-color yellow"></div>
+    <div class="spain-color red"></div>
+</div>
+
+<div class="france">
+    <div class="france-color blue"></div>
+    <div class="france-color middle white"></div>
+    <div class="france-color end red"></div>
+</div>
     
 </body>
 </html>
