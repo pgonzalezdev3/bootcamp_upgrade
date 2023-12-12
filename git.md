@@ -73,6 +73,12 @@ git push origin <nombre de mi rama>
 git push origin task/arreglar_login
 ```
 
+## Correcciones
+
+#### Descartar un archivo en carpeta local
+```bash
+git checkout -- ruta/nombre_archivo.ext
+```
 
 ## ramas
 permite moverse por las ramas o crear por otras
@@ -92,5 +98,7 @@ git checkout develop
 git checkout -b <nombre de la rama>
 git checkout -b task/arreglar_boton_login
 ```
+
+
 
 
