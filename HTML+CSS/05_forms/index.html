@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <style>
+        form {
+            max-width: 600px;
+            padding: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            background-color: #333;
+            color: white;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .input-form {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            height: 45px;
+            margin-top: 10px;
+            border-radius: 4px;
+            border: none;
+
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        #submit-btn {
+            font-size: 20px;
+            color: white;
+            background-color: orchid;
+            height: 60px;
+            border-radius: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
     <!-- 
@@ -20,9 +68,59 @@
 
         
      -->
+    <form id="form" target="#" action="GET">
+
+        <h2>Regístrate en nuestra web</h2>
+
+        <div class="input-form">
+            <label for="nombre">nombre</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="input-form">
+            <label for="apellido1">apellido1</label>
+            <input type="text" id="apellido1" name="apellido1">
+        </div>
+        <div class="input-form">
+            <label for="apellido2">apellido2</label>
+            <input type="text" id="apellido2" name="apellido2">
+        </div>
+        <div class="input-form">
+            <label for="email">email</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div class="input-form">
+            <label for="telefono">telefono</label>
+            <input type="text" id="telefono" name="telefono">
+        </div>
+        <div class="input-form">
+            <label for="mayor">mayor</label>
+            <input type="text" id="mayor" name="mayor">
+        </div>
+        <div class="input-form">
+            <input id="submit-btn" type="submit" onclick="checkForm()" value="Enviar">
+        </div>
+        
+    </form>
 
 
-     <input type="submit" onclick="checkForm()" value="Enviar">
-    
+
+    <script>
+        function checkForm() {
+            const nombre = document.querySelector('#nombre');
+            const apellido1 = document.querySelector('#apellido1');
+            const apellido2 = document.querySelector('#apellido2');
+            const email = document.querySelector('#email');
+            const telefono = document.querySelector('#nombre');
+            const mayor = document.querySelector('#nombre');
+
+            if (nombre.value !== ""  && apellido1.value !== ""  && apellido2.value !== ""  && email.value !== ""  && telefono.value !== ""  && mayor.value ) {
+                alert('es correcto');
+            } else {
+                alert('error');
+            }
+        }
+    </script>
+
 </body>
+
 </html>

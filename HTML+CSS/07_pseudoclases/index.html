@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .elemento {
+            margin: 0 auto;
+            width: 250px;
+            height: 250px;
+            background-color: aquamarine;
+            transition: 2s;
+        }
+
+        .elemento:hover {
+            background-color: blue;
+            width: 270px;
+            height: 270px;
+            transition-delay: 1s;
+            transition: 5s;
+        }
+
+        a {
+            margin-top: 50px;
+            font-size: 30px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        a:link {
+            color: blueviolet;
+
+        }
+        a:visited {
+            color: goldenrod;
+        }
+
+        .container p:first-child {
+            font-size: 40px;
+            color: green;
+        }
+        
+        .container p:nth-child(7) {
+            font-size: 40px;
+            color: blue;
+        }
+        
+        .container p:last-child() {
+            color: red;
+            font-size: 40px;
+        }
+
+
+    input {
+        width: 500px;
+        height: 55px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        padding: 0 10px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    input:focus {
+        border: 2px solid red;
+        background-color: cyan;
+        color: white;
+    }
+
+
+    .menu {
+        visibility: hidden;
+    }
+
+    .menu:hover {
+        visibility: visible;
+    }
+
+    </style>
+</head>
+<body>
+
+<!-- <div class="elemento"></div>
+<a href="https://www.google.es/">Ir a mi página web</a> -->
+
+<input type="text" placeholder="Nombre completo">
+
+
+<div class="menu">
+    <div style="width: 50px; height: 50px; background-color: blue;"></div>
+    <p>menu1</p>
+    <p>menu2</p>
+    <p>menu3</p>
+</div>
+
+</body>
+</html>
